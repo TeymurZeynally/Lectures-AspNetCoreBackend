@@ -43,7 +43,7 @@ namespace Lecture07.CatsApi.Api.Cats.Controllers
 
 		[HttpGet("search")]
 		public async Task<ActionResult<CatResponseContract[]>> SearchByName(
-			[FromQuery][Required][StringLength(50, MinimumLength = 1)] string name,
+			[FromQuery][Required] string name,
 			CancellationToken cancellationToken)
 		{
 			logger.LogInformation("Searching cats by name: {CatName}.", name);
