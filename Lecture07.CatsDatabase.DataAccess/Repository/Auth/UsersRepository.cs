@@ -45,11 +45,7 @@ namespace Lecture07.CatsDatabase.DataAccess.Repository.Auth
 
             var user = await connection.QuerySingleOrDefaultAsync<User>(command);
 
-            logger.LogInformation(
-                user is null
-                    ? "User with uid {UserUid} was not found in repository."
-                    : "User with uid {UserUid} was found in repository.",
-                uid);
+            logger.LogInformation(user is null ? "User with uid {UserUid} was not found in repository." : "User with uid {UserUid} was found in repository.", uid);
 
             return user;
         }
