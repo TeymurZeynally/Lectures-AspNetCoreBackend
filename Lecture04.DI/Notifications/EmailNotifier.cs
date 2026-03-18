@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lecture04.DI.Notifications
+﻿namespace Lecture04.DI.Notifications
 {
     public class EmailNotifier : INotifier
     {

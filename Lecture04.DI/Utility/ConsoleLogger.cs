@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lecture04.DI.Utility
+﻿namespace Lecture04.DI.Utility
 {
     public class ConsoleLogger : IConsoleLogger
     {

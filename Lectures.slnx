@@ -10,5 +10,6 @@
   <Project Path="Lecture06.Configuration/Lecture06.Configuration.csproj" Id="9a50967b-9793-473e-a183-bfb3c7392b7a" />
   <Project Path="Lecture06.Logging/Lecture06.Logging.csproj" Id="8c60a89d-66ba-4811-96bc-82d15ded6bd5" />
   <Project Path="Lecture07.CatsApi/Lecture07.CatsApi.csproj" Id="fcf58a97-f9f9-4649-b6d3-b4249fd294a9" />
+  <Project Path="Lecture07.CatsDatabase.DataAccess/Lecture07.CatsDatabase.DataAccess.csproj" Id="f96f30fc-467d-4c83-b47d-cb70b22f6b2e" />
   <Project Path="Lecture07.CatsDatabase/Lecture07.CatsDatabase.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
 </Solution>

@@ -12,5 +12,9 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.2" />
   </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\Lecture07.CatsDatabase.DataAccess\Lecture07.CatsDatabase.DataAccess.csproj" />
+  </ItemGroup>
 
 </Project>

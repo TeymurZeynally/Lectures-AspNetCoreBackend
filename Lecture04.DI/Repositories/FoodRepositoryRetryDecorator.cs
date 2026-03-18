@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Lecture04.DI.Repositories
+﻿namespace Lecture04.DI.Repositories
 {
     internal class FoodRepositoryRetryDecorator : IFoodRepository
     {
