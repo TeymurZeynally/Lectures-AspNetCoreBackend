@@ -12,4 +12,7 @@
   <Project Path="Lecture07.CatsApi/Lecture07.CatsApi.csproj" Id="fcf58a97-f9f9-4649-b6d3-b4249fd294a9" />
   <Project Path="Lecture07.CatsDatabase.DataAccess/Lecture07.CatsDatabase.DataAccess.csproj" Id="f96f30fc-467d-4c83-b47d-cb70b22f6b2e" />
   <Project Path="Lecture07.CatsDatabase/Lecture07.CatsDatabase.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
+  <Project Path="Lecture08.CatsApi/Lecture08.CatsApi.csproj" />
+  <Project Path="Lecture08.CatsDatabase.DataAccess.EF/Lecture08.CatsDatabase.DataAccess.EF.csproj" Id="718cc98f-e1e3-4991-bf7f-7cca8e35d3ad" />
+  <Project Path="Lecture08.CatsDatabase/Lecture08.CatsDatabase.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
 </Solution>

@@ -1,0 +1,16 @@
+services:
+  cats-db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./:/docker-entrypoint-initdb.d
+    networks:
+      - database
+
+networks:
+  database:
+    driver: bridge
