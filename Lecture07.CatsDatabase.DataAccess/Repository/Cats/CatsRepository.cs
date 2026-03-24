@@ -45,7 +45,7 @@ namespace Lecture07.CatsDatabase.DataAccess.Repository.Cats
 
         public async Task<Cat[]> GetAll(CancellationToken token)
         {
-            var sql = @"
+            const string sql = @"
                 SELECT c.id, c.uid, c.user_id, u.uid as useruid, c.name, c.breed, c.age, c.created_at as createdat
                 FROM cats.cats c
                 INNER JOIN auth.users u ON u.id = c.user_id
@@ -89,7 +89,7 @@ namespace Lecture07.CatsDatabase.DataAccess.Repository.Cats
 
         public async Task<Cat[]> SearchByName(string name, CancellationToken token)
         {
-            var sql = $@"
+            const string sql = $@"
                 SELECT c.id, c.uid, c.user_id, u.uid AS useruid, c.name, c.breed, c.age, c.created_at AS createdat
                 FROM cats.cats c
                 INNER JOIN auth.users u ON u.id = c.user_id

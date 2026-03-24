@@ -26,14 +26,14 @@ namespace Lecture07.CatsDatabase.DataAccess.Repository.Cats
                     WHERE (@UserUid IS NULL OR u.uid = @UserUid)
                         AND (@Title IS NULL OR p.title ILIKE @TitlePattern)
                         AND (
-                            @CatUid IS NULL OR EXISTS
-                            (
-                                SELECT 1
-                                FROM cats.posts_cats pc
-                                INNER JOIN cats.cats c ON c.id = pc.cat_id
-                                WHERE pc.post_id = p.id
-                                    AND c.uid = @CatUid
-                            )
+                                @CatUid IS NULL OR EXISTS
+                                (
+                                    SELECT 1
+                                    FROM cats.posts_cats pc
+                                    INNER JOIN cats.cats c ON c.id = pc.cat_id
+                                    WHERE pc.post_id = p.id
+                                        AND c.uid = @CatUid
+                                )
                             )
                 )
                 SELECT COUNT(*)
@@ -55,14 +55,14 @@ namespace Lecture07.CatsDatabase.DataAccess.Repository.Cats
                     WHERE (@UserUid IS NULL OR u.uid = @UserUid)
                         AND (@Title IS NULL OR p.title ILIKE @TitlePattern)
                         AND (
-                            @CatUid IS NULL OR EXISTS
-                            (
-                                SELECT 1
-                                FROM cats.posts_cats pc
-                                INNER JOIN cats.cats c ON c.id = pc.cat_id
-                                WHERE pc.post_id = p.id
-                                    AND c.uid = @CatUid
-                            )
+                                @CatUid IS NULL OR EXISTS
+                                (
+                                    SELECT 1
+                                    FROM cats.posts_cats pc
+                                    INNER JOIN cats.cats c ON c.id = pc.cat_id
+                                    WHERE pc.post_id = p.id
+                                        AND c.uid = @CatUid
+                                )
                             )
                 ),
                 paged_posts AS
