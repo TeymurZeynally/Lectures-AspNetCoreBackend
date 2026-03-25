@@ -1,4 +1,9 @@
 using System.Text;
+using Lecture08.CatsApi.Api.Cats.Services;
+using Lecture08.CatsApi.Api.Posts.Services;
+using Lecture08.CatsApi.Api.Users.Services;
+using Lecture08.CatsDatabase.DataAccess.EF;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 Console.OutputEncoding = Encoding.UTF8;
@@ -17,7 +22,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 
-var connectionString = builder.Configuration.GetConnectionString("CatsDb")!;
+builder.Services
+    .AddDbContext<CatsDbContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("CatsDb")))
+    .AddTransient<ICatService, CatService>()
+    .AddTransient<IUserService, UserService>()
+    .AddTransient<IPostService, PostService>();
 
 var app = builder.Build();
 
