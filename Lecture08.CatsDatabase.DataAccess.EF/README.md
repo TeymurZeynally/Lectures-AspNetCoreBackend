@@ -35,7 +35,7 @@ dotnet tool install --global dotnet-ef
 
 ### Сгенерировать модели и `DbContext` для существующей базы данных
 ```powershell
-dotnet ef dbcontext scaffold "Host=localhost;Port=5432;Database=cats_db_local;Username=postgres;Password=postgres" Npgsql.EntityFrameworkCore.PostgreSQL -o Entities -c CatsDbContext --context-dir .
+dotnet ef dbcontext scaffold "Host=127.0.0.1;Port=5432;Database=cats_db_local;Username=postgres;Password=postgres" Npgsql.EntityFrameworkCore.PostgreSQL -o Entities -c CatsDbContext --context-dir .
 ```
 
 Описание:
