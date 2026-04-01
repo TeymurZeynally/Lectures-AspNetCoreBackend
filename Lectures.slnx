@@ -15,6 +15,6 @@
   <Project Path="Lecture08.CatsApi/Lecture08.CatsApi.csproj" />
   <Project Path="Lecture08.CatsDatabase.DataAccess.EF/Lecture08.CatsDatabase.DataAccess.EF.csproj" Id="718cc98f-e1e3-4991-bf7f-7cca8e35d3ad" />
   <Project Path="Lecture08.CatsDatabase/Lecture08.CatsDatabase.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
-  <Project Path="Lecture09.CatsApi/Lecture09.CatsApi.csproj" />
-  <Project Path="Lecture09.CatsDatabase.DataAccess.EF/Lecture09.CatsDatabase.DataAccess.EF.csproj" />
+  <Project Path="Lecture09.ErrorHandling.CatsApi/Lecture09.ErrorHandling.CatsApi.csproj" />
+  <Project Path="Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF/Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF.csproj" />
 </Solution>
