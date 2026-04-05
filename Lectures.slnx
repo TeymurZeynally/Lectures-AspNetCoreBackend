@@ -17,4 +17,10 @@
   <Project Path="Lecture08.CatsDatabase/Lecture08.CatsDatabase.msbuildproj" Type="13b669be-bb05-4ddf-9536-439f39a36129" />
   <Project Path="Lecture09.ErrorHandling.CatsApi/Lecture09.ErrorHandling.CatsApi.csproj" />
   <Project Path="Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF/Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF.csproj" />
+  <Project Path="Lecture10.ClientAppIntegration.CatsApi/Lecture10.ClientAppIntegration.CatsApi.csproj" />
+  <Project Path="Lecture10.ClientAppIntegration.CatsDatabase.DataAccess.EF/Lecture10.ClientAppIntegration.CatsDatabase.DataAccess.EF.csproj" />
+  <Project Path="Lecture10.ClientAppIntegration.CatsUI/lecture10.clientappintegration.catsui.esproj">
+    <Build />
+    <Deploy />
+  </Project>
 </Solution>
