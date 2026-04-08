@@ -34,16 +34,11 @@ export default function CatsPage() {
                             <Title level={3} style={{ margin: 0 }}>
                                 Мои котики
                             </Title>
-                            <Text type="secondary">First step layout: simple cards and inline inputs, no dialogs.</Text>
+                            <Text type="secondary">Просто набросок странички</Text>
                         </Space>
                     </Col>
                     <Col xs={24} md={8}>
-                        <Space
-                            style={{
-                                width: '100%',
-                                justifyContent: 'flex-end',
-                            }}
-                        >
+                        <Space style={{ width: '100%', justifyContent: 'flex-end' }}>
                             <Input placeholder="Search cats" style={{ width: 220 }} />
                             <Button type="primary" icon={<PlusOutlined />}>
                                 Поиск котиков

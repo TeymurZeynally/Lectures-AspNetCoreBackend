@@ -18,16 +18,16 @@ export default function LoginPage() {
                         <Title level={2}>Вход</Title>
                     </div>
 
-                    <Form layout="vertical">
-                        <Form.Item label="Email">
+                    <Form layout="vertical" onFinish={(x) => console.log(x)}>
+                        <Form.Item label="Email" name="email">
                             <Input prefix={<MailOutlined />} placeholder="demo@catspace.dev" />
                         </Form.Item>
 
-                        <Form.Item label="Пароль">
+                        <Form.Item label="Пароль" name="password">
                             <Input.Password prefix={<LockOutlined />} placeholder="Введите пароль" />
                         </Form.Item>
 
-                        <Button type="primary" block size="large">
+                        <Button type="primary" block size="large" htmlType="submit">
                             Войти
                         </Button>
                     </Form>

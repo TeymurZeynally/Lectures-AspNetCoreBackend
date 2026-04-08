@@ -44,7 +44,7 @@ export default function App() {
             <Sider breakpoint="lg" collapsedWidth="0" width={260} style={{ background: 'linear-gradient(180deg, #111827 0%, #1f2937 100%)' }}>
                 <div style={{ padding: 20 }}>
                     <Space align="center">
-                        <Avatar size={48} style={{ backgroundColor: '#ff85c0' }} src={logo}></Avatar>
+                        <Avatar size={48} src={logo}></Avatar>
                         <div>
                             <Title level={4} style={{ color: 'white', margin: 0 }}>
                                 Cat Space

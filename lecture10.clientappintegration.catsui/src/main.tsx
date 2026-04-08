@@ -3,9 +3,14 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './app/App'
 import 'antd/dist/reset.css'
 import './app/app.css'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+const client = new QueryClient()
 
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
-        <App />
+        <QueryClientProvider client={client}>
+            <App />
+        </QueryClientProvider>
     </BrowserRouter>
 )
