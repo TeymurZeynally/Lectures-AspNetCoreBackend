@@ -29,7 +29,16 @@ builder.Services
     .AddTransient<IUserService, UserService>()
     .AddTransient<IPostService, PostService>();
 
+builder.Services
+    .AddCors(options => options
+        .AddPolicy("AllowFrontend", policy => policy
+            .WithOrigins("http://localhost:54583")
+            .AllowAnyHeader()
+            .AllowAnyMethod()));
+
 var app = builder.Build();
+
+app.UseCors("AllowFrontend");
 
 app.UseSwagger().UseSwaggerUI();
 
