@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Погодка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Погодка</h1>
+
+            <div class="theme-switcher">
+                <button type="button" class="theme-btn" data-theme="light" onclick="setTheme('light')">☀️ Light</button>
+                <button type="button" class="theme-btn" data-theme="dark" onclick="setTheme('dark')">🌙 Dark</button>
+                <button type="button" class="theme-btn" data-theme="ocean" onclick="setTheme('ocean')">🌊 Ocean</button>
+            </div>
+        </header>
+
+        <div class="search">
+            <select id="citySelect">
+                <option value="">Выберите город...</option>
+                <option value="Moscow">Москва</option>
+                <option value="Berlin">Берлин</option>
+                <option value="Paris">Париж</option>
+                <option value="London">Лондон</option>
+                <option value="Madrid">Мадрид</option>
+                <option value="Rome">Рим</option>
+                <option value="Tokyo">Токио</option>
+            </select>
+
+            <button type="button" onclick="fetchWeather()">Показать погоду</button>
+        </div>
+
+        <div id="weatherResult" class="card hidden"></div>
+
+        <div class="storage-grid">
+            <div class="card storage-card">
+                <h3>Cookie (HttpOnly)</h3>
+                <p class="label">Предыдущий город (читает сервер):</p>
+                <p id="cookieCity">—</p>
+                <p class="note">JS не видит document.cookie — только сервер, клиент получает через API</p>
+            </div>
+
+            <div class="card storage-card">
+                <h3>localStorage</h3>
+                <p class="label">Тема интерфейса:</p>
+                <p id="currentTheme">—</p>
+                <p class="note">Выбранная тема подсвечена</p>
+            </div>
+
+            <div class="card storage-card">
+                <h3>sessionStorage</h3>
+                <p class="label">Запросов в этой вкладке:</p>
+                <p id="sessionCount">0</p>
+                <p class="note">Сбросится при закрытии вкладки</p>
+            </div>
+
+            <div class="card storage-card">
+                <h3>Server Session</h3>
+                <p class="label">История городов (на сервере):</p>
+                <ul id="cityHistory"><li>—</li></ul>
+                <p class="note">Хранится на сервере, клиент получает через API</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

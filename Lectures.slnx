@@ -23,4 +23,5 @@
     <Build />
     <Deploy />
   </Project>
+  <Project Path="Lecture12.WebState.WeatherApp/Lecture12.WebState.WeatherApp.csproj" />
 </Solution>

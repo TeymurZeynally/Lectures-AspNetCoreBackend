@@ -1,8 +1,7 @@
-﻿
-using Lecture03.FirstApiApplication.Api.Cats.Contract;
+﻿using Lecture06.Logging.Api.Cats.Contract;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lecture03.FirstApiApplication.Api.Cats.Controllers
+namespace Lecture06.Logging.Api.Cats.Controllers
 {
     [Route("api/cats")]
     [ApiController]

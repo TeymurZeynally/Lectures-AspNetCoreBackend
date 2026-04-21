@@ -1,4 +1,4 @@
-﻿namespace Lecture03.FirstApiApplication.Api.Cats.Contract
+﻿namespace Lecture06.Logging.Api.Cats.Contract
 {
     public class CatResponseContract
     {

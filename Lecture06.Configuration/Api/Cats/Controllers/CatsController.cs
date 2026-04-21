@@ -1,9 +1,9 @@
-﻿using Lecture03.FirstApiApplication.Api.Cats.Contract;
+﻿using Lecture06.Configuration.Api.Cats.Contract;
 using Lecture06.Configuration.Api.Cats.Options;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace Lecture03.FirstApiApplication.Api.Cats.Controllers
+namespace Lecture06.Configuration.Api.Cats.Controllers
 {
     [Route("api/cats")]
     [ApiController]
