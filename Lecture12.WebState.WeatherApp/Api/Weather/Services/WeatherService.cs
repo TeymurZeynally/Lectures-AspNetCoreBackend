@@ -1,6 +1,6 @@
 ﻿using Lecture12.WebState.WeatherApp.Api.Weather.Contract;
+using Lecture12.WebState.WeatherApp.Api.Weather.Exceptions;
 using Lecture12.WebState.WeatherApp.External.HttpClients;
-using WebApplication14.Api.Weather.Exceptions;
 
 namespace Lecture12.WebState.WeatherApp.Api.Weather.Services;
 
