@@ -71,7 +71,7 @@ async function fetchWeather() {
         resultDiv.innerHTML = `
             <p class="temp">${data.temperature}°C</p>
             <p><strong>${data.city}</strong></p>
-            <p class="meta">${weatherCodeToText(data.description)} &middot; Ветер ${data.windSpeed} км/ч</p>`;
+            <p class="meta">${weatherCodeToText(data.weatherCode)} &middot; Ветер ${data.windSpeed} км/ч</p>`;
 
         incrementWeatherFetchCount();
         await loadState();

@@ -1,6 +1,4 @@
-﻿using Lecture12.WebState.WeatherApp.Api.Weather.Contract;
-
-namespace Lecture12.WebState.WeatherApp.External.HttpClients.Models
+﻿namespace Lecture12.WebState.WeatherApp.External.HttpClients.Models
 {
 	internal sealed class Forecast
 	{

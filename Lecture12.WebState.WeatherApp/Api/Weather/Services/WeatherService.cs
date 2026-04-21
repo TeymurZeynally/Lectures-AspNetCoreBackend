@@ -22,7 +22,7 @@ internal class WeatherService(IGeocodingClient geocodingClient,IForecastClient f
 		{
 			City = place.Name,
 			Temperature = forecast.Temperature,
-			WeatherCode = forecast.WeatherCode,
+			WeatherCode = (WeatherCode)forecast.WeatherCode,
 			WindSpeed = forecast.WindSpeed
 		};
 	}

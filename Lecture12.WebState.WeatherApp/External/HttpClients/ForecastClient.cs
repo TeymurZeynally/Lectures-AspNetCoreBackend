@@ -1,6 +1,5 @@
 ﻿using System.Globalization;
 using System.Text.Json;
-using Lecture12.WebState.WeatherApp.Api.Weather.Contract;
 using Lecture12.WebState.WeatherApp.External.HttpClients.Models;
 
 namespace Lecture12.WebState.WeatherApp.External.HttpClients;
