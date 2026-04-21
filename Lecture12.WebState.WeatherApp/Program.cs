@@ -1,4 +1,3 @@
-using System.Net;
 using Lecture12.WebState.WeatherApp.Api.Weather.Services;
 using Lecture12.WebState.WeatherApp.External.HttpClients;
 

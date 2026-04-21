@@ -5,7 +5,7 @@ using Lecture12.WebState.WeatherApp.External.HttpClients;
 namespace Lecture12.WebState.WeatherApp.Api.Weather.Services;
 
 
-internal class WeatherService(IGeocodingClient geocodingClient,IForecastClient forecastClient) : IWeatherService
+internal class WeatherService(IGeocodingClient geocodingClient, IForecastClient forecastClient) : IWeatherService
 {
 	public async Task<WeatherResult> GetWeatherAsync(string city)
 	{
