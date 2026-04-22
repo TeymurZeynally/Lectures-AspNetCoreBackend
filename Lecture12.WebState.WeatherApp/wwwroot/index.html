@@ -34,12 +34,21 @@
 
         <div id="weatherResult" class="card hidden"></div>
 
+
         <div class="storage-grid">
             <div class="card storage-card">
                 <h3>Cookie (HttpOnly)</h3>
                 <p class="label">Предыдущий город (читает сервер):</p>
                 <p id="cookieCity">—</p>
                 <p class="note">JS не видит document.cookie — только сервер, клиент получает через API</p>
+            </div>
+
+
+            <div class="card storage-card">
+                <h3>Server Session</h3>
+                <p class="label">История городов (на сервере):</p>
+                <ul id="cityHistory"><li>—</li></ul>
+                <p class="note">Хранится на сервере, клиент получает через API</p>
             </div>
 
             <div class="card storage-card">
@@ -55,14 +64,8 @@
                 <p id="sessionCount">0</p>
                 <p class="note">Сбросится при закрытии вкладки</p>
             </div>
-
-            <div class="card storage-card">
-                <h3>Server Session</h3>
-                <p class="label">История городов (на сервере):</p>
-                <ul id="cityHistory"><li>—</li></ul>
-                <p class="note">Хранится на сервере, клиент получает через API</p>
-            </div>
         </div>
+
     </div>
 
     <script src="app.js"></script>

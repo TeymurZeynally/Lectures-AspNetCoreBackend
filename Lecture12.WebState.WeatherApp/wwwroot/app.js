@@ -1,5 +1,6 @@
 ﻿function setTheme(name) {
     document.documentElement.setAttribute('data-theme', name);
+
     localStorage.setItem('theme', name);
     document.getElementById('currentTheme').textContent = name;
 
@@ -42,10 +43,10 @@ function incrementWeatherFetchCount() {
     document.getElementById('sessionCount').textContent = n;
 }
 
+
 async function loadState() {
     const renderHistory = (cities) => {
         document.getElementById('cityHistory').innerHTML = cities.length > 0 ? cities.map(c => `<li>${c}</li>`).join('') : '<li>—</li>';
-        console.log(cities);
     }
     try {
         const state = await fetch('/api/weather/state').then(x => x.json());
@@ -73,8 +74,8 @@ async function fetchWeather() {
             <p><strong>${data.city}</strong></p>
             <p class="meta">${weatherCodeToText(data.weatherCode)} &middot; Ветер ${data.windSpeed} км/ч</p>`;
 
-        incrementWeatherFetchCount();
         await loadState();
+        incrementWeatherFetchCount();
 
     } catch {
         resultDiv.innerHTML = `<p style="color:red">Ошибка запроса</p>`;
