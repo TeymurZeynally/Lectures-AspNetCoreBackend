@@ -1,0 +1,42 @@
+{
+    "realm": "demo",
+    "enabled": true,
+    "clients": [
+        {
+            "clientId": "aspnet-web",
+            "name": "ASP.NET Web App",
+            "enabled": true,
+            "protocol": "openid-connect",
+
+            "publicClient": false,
+            "clientAuthenticatorType": "client-secret",
+            "secret": "aspnet-web-secret",
+
+            "standardFlowEnabled": true,
+            "directAccessGrantsEnabled": false,
+            "implicitFlowEnabled": false,
+
+            "redirectUris": [
+                "http://localhost:5000/signin-oidc",
+                "http://localhost:5000/signout-callback-oidc"
+            ],
+            "webOrigins": [
+                "http://localhost:5000"
+            ]
+        }
+    ],
+    "users": [
+        {
+            "username": "demo-user",
+            "enabled": true,
+            "emailVerified": true,
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "Pass123!",
+                    "temporary": false
+                }
+            ]
+        }
+    ]
+}

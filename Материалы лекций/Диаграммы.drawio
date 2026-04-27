@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6" pages="7">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6" pages="8">
   <diagram name="Back/Front" id="O9buTH0CevuxUzr-W3t6">
     <mxGraphModel dx="2404" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1959,7 +1959,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="QRknvhPqOsXR0IfKDGdx" name="https">
-    <mxGraphModel dx="17240" dy="9140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2772" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2506,7 +2506,9 @@
           <mxGeometry height="17" width="300" x="8" y="25" as="geometry" />
         </mxCell>
         <mxCell id="MsiPR1lZS3_6SOtOqI0t-327" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" value="Bcrypt" vertex="1">
-          <mxGeometry height="70" width="420" x="-824.85" y="1195" as="geometry" />
+          <mxGeometry height="70" width="420" x="-824.85" y="1195" as="geometry">
+            <mxRectangle height="30" width="70" x="-824.85" y="1195" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="MsiPR1lZS3_6SOtOqI0t-329" parent="MsiPR1lZS3_6SOtOqI0t-327" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;fontSize=8;fontFamily=Courier New;" value="$2a$10$wDwDxHhf/lPp2H1DoQy0zOe.RRTmBLs9akW0YfKfj5wfVvq0RqotC&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;font style=&quot;color: rgb(128, 128, 128);&quot;&gt;\__/\/ \____________________/\_____________________________/&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;Alg Cost&amp;nbsp; &amp;nbsp; &amp;nbsp; Salt&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Hash&lt;/font&gt;" vertex="1">
           <mxGeometry height="38" width="294.57" x="8.43" y="28" as="geometry" />
@@ -5281,6 +5283,458 @@
         </mxCell>
         <mxCell id="HoKJfF-rfbNljGvxtYqt-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=27;" value="TLS 1.2 vs TLS 1.3" vertex="1">
           <mxGeometry height="30" width="952" x="17.15" y="4430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="AkEVRUooeh6JkWKFPIDr" name="Auth">
+    <mxGraphModel dx="1636" dy="962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WylmBeNUwlA5TNE59yxp-26" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" value="Ввод логина и пароля&amp;nbsp;&lt;div&gt;Login: admin Password: passwd&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.1294" y="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="709.0699999999999" y="362" />
+            </Array>
+            <mxPoint x="679.0699999999999" y="332" as="sourcePoint" />
+            <mxPoint x="684.0699999999999" y="362.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;size=0;" value="" vertex="1">
+          <mxGeometry height="270" width="40" x="656.57" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-2" parent="WylmBeNUwlA5TNE59yxp-1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="216" width="10" x="15" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-3" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Browser.svg;" value="Browser (Client)" vertex="1">
+          <mxGeometry height="52" width="65" x="644.0700000000002" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-4" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" value="Server" vertex="1">
+          <mxGeometry height="52" width="77.5" x="990.0000000000005" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-7" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;size=0;" value="" vertex="1">
+          <mxGeometry height="270" width="40" x="1008.75" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-8" parent="WylmBeNUwlA5TNE59yxp-7" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="15" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="WylmBeNUwlA5TNE59yxp-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.3000000000002" y="252" as="sourcePoint" />
+            <mxPoint x="1398.4800000000005" y="252" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-10" connectable="0" parent="WylmBeNUwlA5TNE59yxp-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;хочу данные /data/page&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="13" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-11" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;401 Unauthorized - кто ты? Я умею в Basic аутентификацию&amp;gt;">
+          <mxGeometry relative="1" x="0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1023.7500000000005" y="310" as="sourcePoint" />
+            <mxPoint x="681.5700000000002" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-13" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="WylmBeNUwlA5TNE59yxp-2" value="request data/page">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="234" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;GET /api/some/data HTTP/1.1&lt;/div&gt;&lt;div&gt;Accept: text/html,application/xhtml+xml&lt;/div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Host: localhost:5014&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="250" x="370" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 &lt;b&gt;401 Unauthorized&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Sun, 26 Apr 2026 23:22:43 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Transfer-Encoding: chunked&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;WWW-Authenticate: Basic realm=&quot;My app&quot;, charset=&quot;UTF-8&quot;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="352.5" x="1067.5" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-17" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1067" y="300" as="sourcePoint" />
+            <mxPoint x="1010" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;GET /api/some/data HTTP/1.1&lt;/div&gt;&lt;div&gt;Accept: text/html,application/xhtml+xml&lt;/div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9&lt;/div&gt;&lt;div&gt;&lt;b&gt;Authorization: Basic YWRtaW46cGFzc3dk&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Host: localhost:5014&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="370" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 200 OK&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Type: application/json; charset=utf-8&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Sun, 26 Apr 2026 23:22:51 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Transfer-Encoding: chunked&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;{&quot;someData&quot;:&quot;Hello, this is response from server&quot;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="352.5" x="1067.5" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-28" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="1023.7499999999998" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-29" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="WylmBeNUwlA5TNE59yxp-28" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.3" y="390" as="sourcePoint" />
+            <mxPoint x="1398.4800000000002" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-30" connectable="0" parent="WylmBeNUwlA5TNE59yxp-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;хочу данные /data/page (но теперь с заголовком&amp;nbsp;Authorization)&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="103" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-31" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;держи свои данные&amp;gt;">
+          <mxGeometry relative="1" x="-0.6274" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1023.7500000000002" y="448" as="sourcePoint" />
+            <mxPoint x="681.5699999999999" y="448" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-33" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1067" y="440" as="sourcePoint" />
+            <mxPoint x="1020" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-34" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1.002;entryY=0.405;entryDx=0;entryDy=0;entryPerimeter=0;" target="WylmBeNUwlA5TNE59yxp-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="687" y="380" as="sourcePoint" />
+            <mxPoint x="640" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-35" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="WylmBeNUwlA5TNE59yxp-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="260" />
+              <mxPoint x="630" y="260" />
+            </Array>
+            <mxPoint x="695" y="241" as="sourcePoint" />
+            <mxPoint x="615" y="290.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-37" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;size=0;" value="" vertex="1">
+          <mxGeometry height="540" width="40" x="656.57" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-38" parent="WylmBeNUwlA5TNE59yxp-37" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="76" width="10" x="15" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-59" parent="WylmBeNUwlA5TNE59yxp-37" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="80" width="10" x="15" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-70" parent="WylmBeNUwlA5TNE59yxp-37" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="86" width="10" x="15" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-39" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Browser.svg;" value="Browser (Client)" vertex="1">
+          <mxGeometry height="52" width="65" x="644.0700000000002" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-40" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" value="Server" vertex="1">
+          <mxGeometry height="52" width="77.5" x="990.0000000000005" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-41" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;size=0;" value="" vertex="1">
+          <mxGeometry height="540" width="40" x="1008.75" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-42" parent="WylmBeNUwlA5TNE59yxp-41" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="15" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-43" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="WylmBeNUwlA5TNE59yxp-42" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.3000000000002" y="712" as="sourcePoint" />
+            <mxPoint x="1398.4800000000005" y="712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-44" connectable="0" parent="WylmBeNUwlA5TNE59yxp-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;хочу данные /data/page&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="13" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-45" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;404 Unauthorized&amp;gt;">
+          <mxGeometry relative="1" x="-0.6274" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1023.7500000000005" y="770" as="sourcePoint" />
+            <mxPoint x="681.5700000000002" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-46" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="WylmBeNUwlA5TNE59yxp-38" value="request data/page">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="694" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;GET /api/some/data HTTP/1.1&lt;/div&gt;&lt;div&gt;Accept: text/html,application/xhtml+xml&lt;/div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Host: localhost:5015&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="250" x="370" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 401 Unauthorized&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Length: 0&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Sun, 26 Apr 2026 23:42:34 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Location: http://localhost:5015/Account/Login?ReturnUrl=%2Fapi%2Fsome%2Fdata&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="452.5" x="1067.5" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-49" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1067" y="760" as="sourcePoint" />
+            <mxPoint x="1010" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;POST /api/Account/login HTTP/1.1&lt;/div&gt;&lt;div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9,ru;q=0.8&lt;/div&gt;&lt;div&gt;Connection: keep-alive&lt;/div&gt;&lt;div&gt;Content-Length: 61&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Host: localhost:5015&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;div style=&quot;&quot;&gt;{&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;login&quot;: &quot;login&quot;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;password&quot;: &quot;secret&quot;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="250" x="370" y="821" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 200 OK&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Length: 0&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Sun, 26 Apr 2026 23:59:42 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Cache-Control: no-cache,no-store&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Expires: Thu, 01 Jan 1970 00:00:00 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Pragma: no-cache&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;Set-Cookie: .AspNetCore.Cookies=CfDJ8IqrZvlyr5NCmtGIuB_CGiUOTF2rYbpxo&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;h8B6D4Y2kuoAYuKJcut_V9YmFSHsRBen2zfX45iTWJ47jWqwzzi0h0VEY...; expires=Mon, 27 Apr 2026 00:19:42 GMT; path=/; samesite=lax; httponly&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="159" width="452.5" x="1067.5" y="821" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-52" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="1023.7499999999998" y="821" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-53" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.3" y="822" as="sourcePoint" />
+            <mxPoint x="1023.7499999999998" y="822" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-54" connectable="0" parent="WylmBeNUwlA5TNE59yxp-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;login&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="-28" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-55" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;с кредами всё ок, держи куки&amp;gt;">
+          <mxGeometry relative="1" x="-0.452" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1023.7500000000002" y="879" as="sourcePoint" />
+            <mxPoint x="681.5699999999999" y="879" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-56" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1058" y="869" as="sourcePoint" />
+            <mxPoint x="1011" y="869" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-58" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="WylmBeNUwlA5TNE59yxp-47" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="720" />
+              <mxPoint x="630" y="720" />
+            </Array>
+            <mxPoint x="695" y="701" as="sourcePoint" />
+            <mxPoint x="615" y="750.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-61" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" value="login">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="811.49" as="sourcePoint" />
+            <mxPoint x="671" y="811.49" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-62" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;GET /api/some/data HTTP/1.1&lt;/div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9,ru;q=0.8&lt;/div&gt;&lt;div&gt;Connection: keep-alive&lt;/div&gt;&lt;div&gt;&lt;b&gt;Cookie: .AspNetCore.Cookies=CfDJ8IqrZvlyr&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;5NCmtGIuB_CGiUOTF2rYbpxoh8B6D4Y2k&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;uoAYuKJcut_V9YmFSHsRBen2zfX45iTWJ4&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;7jWqwzzi0h0VEYOXf2w-M6M2&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;...&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Host: localhost:5015&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="250" x="370" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-63" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="1024.2499999999998" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-64" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="WylmBeNUwlA5TNE59yxp-63" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.8" y="995" as="sourcePoint" />
+            <mxPoint x="1398.9800000000002" y="995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-65" connectable="0" parent="WylmBeNUwlA5TNE59yxp-64" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;хочу данные /data/page (но теперь с куки)&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="62" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-66" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;держи свои данные&amp;gt;">
+          <mxGeometry relative="1" x="-0.6274" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1024.2500000000002" y="1053" as="sourcePoint" />
+            <mxPoint x="682.0699999999999" y="1053" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-67" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1067.5" y="1045" as="sourcePoint" />
+            <mxPoint x="1020.5" y="1045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-68" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" target="WylmBeNUwlA5TNE59yxp-62" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="985" />
+            </Array>
+            <mxPoint x="687.5" y="985" as="sourcePoint" />
+            <mxPoint x="630.5" y="1093.4999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-69" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" value="request data/page">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="975" as="sourcePoint" />
+            <mxPoint x="671" y="975" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 200 OK&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Type: application/json; charset=utf-8&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Mon, 27 Apr 2026 00:09:56 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Cache-Control: no-cache,no-store&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Expires: Thu, 01 Jan 1970 00:00:00 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Pragma: no-cache&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;Set-Cookie:&lt;/b&gt; &lt;b&gt;.AspNetCore.Cookies=CfDJ8IqrZvlyr5NCmtGIuB_CGiXU0iXfQ8P0n8ni071vZNm&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;94OozFHRxsbYj-ar4_Qh75-DC3nCavPXz1shI-Mj3MiUeID0nIAw...;&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;expires=Mon, 27 Apr 2026 00:29:57 GMT; path=/; samesite=lax; httponly&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;Transfer-Encoding: chunked&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;{&quot;someData&quot;:&quot;Hello, this is response from server&quot;}&lt;b&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="205" width="452.5" x="1067.5" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-72" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="WylmBeNUwlA5TNE59yxp-50" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="830" />
+              <mxPoint x="630" y="830" />
+            </Array>
+            <mxPoint x="698" y="811" as="sourcePoint" />
+            <mxPoint x="631" y="853.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-73" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;size=0;" value="" vertex="1">
+          <mxGeometry height="520" width="40" x="656.57" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-74" parent="WylmBeNUwlA5TNE59yxp-73" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="76" width="10" x="15" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-75" parent="WylmBeNUwlA5TNE59yxp-73" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="80" width="10" x="15" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-76" parent="WylmBeNUwlA5TNE59yxp-73" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="86" width="10" x="15" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-77" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Browser.svg;" value="Browser (Client)" vertex="1">
+          <mxGeometry height="52" width="65" x="644.0700000000002" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-78" parent="1" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" value="Server" vertex="1">
+          <mxGeometry height="52" width="77.5" x="990.0000000000005" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-79" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;size=0;" value="" vertex="1">
+          <mxGeometry height="520" width="40" x="1008.75" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-80" parent="WylmBeNUwlA5TNE59yxp-79" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="15" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-81" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="WylmBeNUwlA5TNE59yxp-80" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.3000000000002" y="1432" as="sourcePoint" />
+            <mxPoint x="1398.4800000000005" y="1432" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-82" connectable="0" parent="WylmBeNUwlA5TNE59yxp-81" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;хочу данные /data/page&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="13" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-83" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;404 Unauthorized. Я умею в Bearer аутентификацию&amp;gt;">
+          <mxGeometry relative="1" x="-0.1598" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1023.7500000000005" y="1490" as="sourcePoint" />
+            <mxPoint x="681.5700000000002" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-84" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="WylmBeNUwlA5TNE59yxp-74" value="request data/page">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1414" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;GET /api/some/data HTTP/1.1&lt;/div&gt;&lt;div&gt;Accept: text/html,application/xhtml+xml&lt;/div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Host: localhost:5016&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="250" x="370" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 &lt;b&gt;401 Unauthorized&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Length: 0&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Mon, 27 Apr 2026 00:28:10 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;WWW-Authenticate: Bearer&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="452.5" x="1067.5" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-87" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1067" y="1480" as="sourcePoint" />
+            <mxPoint x="1010" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;POST /api/Account/token/access HTTP/1.1&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9,ru;q=0.8&lt;/div&gt;&lt;div&gt;Connection: keep-alive&lt;/div&gt;&lt;div&gt;Content-Length: 47&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Content-Type: application/json&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Host: localhost:5016&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;div style=&quot;&quot;&gt;{&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;login&quot;: &quot;login&quot;,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;password&quot;: &quot;secret&quot;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="250" x="370" y="1541" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-89" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 200 OK&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Type: application/json; charset=utf-8&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Mon, 27 Apr 2026 00:31:47 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Transfer-Encoding: chunked&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;{&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3Rya&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;W5nIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZ&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;W50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTc3NzI1MTcw&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;NywiaXNzIjoibXktYXdlc29tZS1hcHBsaWNhdGlvbiIsImF1ZCI6Im15LWF3ZXNvbWUt&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dXNlcnMtb2YtbXktYXdlc29tZS1hcHBsaWNhdGlvbiJ9.kffj6T5j8SYHYDJ29r5i8Xrp6d&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Dg0Nbrpk9LDQXzbYk&quot;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="189" width="452.5" x="1067.5" y="1541" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-90" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="1023.75" y="1541" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-91" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.3" y="1542" as="sourcePoint" />
+            <mxPoint x="1023.75" y="1542" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-92" connectable="0" parent="WylmBeNUwlA5TNE59yxp-91" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;login&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="-28" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-93" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;с кредами всё ок, держи JWT токен&amp;gt;">
+          <mxGeometry relative="1" x="-0.3936" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1023.75" y="1599" as="sourcePoint" />
+            <mxPoint x="681.5699999999999" y="1599" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-94" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1058" y="1589" as="sourcePoint" />
+            <mxPoint x="1011" y="1589" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-95" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="WylmBeNUwlA5TNE59yxp-85" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="1440" />
+              <mxPoint x="630" y="1440" />
+            </Array>
+            <mxPoint x="695" y="1421" as="sourcePoint" />
+            <mxPoint x="615" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-96" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" value="login">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1531.49" as="sourcePoint" />
+            <mxPoint x="671" y="1531.49" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-97" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;GET /api/some/data HTTP/1.1&lt;/div&gt;&lt;div&gt;Accept-Encoding: gzip, deflate, br, zstd&lt;/div&gt;&lt;div&gt;Accept-Language: en-US,en;q=0.9,ru;q=0.8&lt;/div&gt;&lt;div&gt;Connection: keep-alive&lt;/div&gt;&lt;div&gt;&lt;b&gt;Authorization: Bearer eyJhbGciOiJIUzI1&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;2NoZW1hcy54bWxzb2FwLm9yZy93cy8&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;uYW1lIjoic3RyaW5nIiwiaHR0cDovL3Nj....&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Host: localhost:5016&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="250" x="370" y="1739" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-98" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="58" width="10" x="1024.25" y="1744" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-99" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="WylmBeNUwlA5TNE59yxp-98" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="681.8" y="1744" as="sourcePoint" />
+            <mxPoint x="1398.9800000000005" y="1744" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-100" connectable="0" parent="WylmBeNUwlA5TNE59yxp-99" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;хочу данные /data/page (но теперь с токеном)&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6137" y="-2" as="geometry">
+            <mxPoint x="62" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-101" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" value="&amp;lt;держи свои данные&amp;gt;">
+          <mxGeometry relative="1" x="-0.6274" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1024.25" y="1802" as="sourcePoint" />
+            <mxPoint x="682.0699999999999" y="1802" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-102" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1067.5" y="1791" as="sourcePoint" />
+            <mxPoint x="1020.5" y="1791" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-103" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" target="WylmBeNUwlA5TNE59yxp-97" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="1734" />
+            </Array>
+            <mxPoint x="687.5" y="1734" as="sourcePoint" />
+            <mxPoint x="630.5" y="1842.4999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-104" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=-0.009;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" value="request data/page">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1724" as="sourcePoint" />
+            <mxPoint x="671" y="1724" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-105" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div class=&quot;pointer-events-none absolute inset-x-4 top-12 bottom-4&quot;&gt;&lt;div class=&quot;pointer-events-none sticky z-40 shrink-0 z-1!&quot;&gt;&lt;div class=&quot;sticky bg-token-border-light&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;relative&quot;&gt;&lt;div class=&quot;w-full overflow-x-hidden overflow-y-auto&quot;&gt;&lt;div class=&quot;relative z-0 flex max-w-full&quot;&gt;&lt;div id=&quot;code-block-viewer&quot; dir=&quot;ltr&quot; class=&quot;q9tKkq_viewer cm-editor z-10 light:cm-light dark:cm-light flex h-full w-full flex-col items-stretch ͼs ͼ16&quot;&gt;&lt;div class=&quot;cm-scroller&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;HTTP/1.1 200 OK&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Content-Type: application/json; charset=utf-8&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Date: Mon, 27 Apr 2026 00:34:37 GMT&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Server: Kestrel&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;Transfer-Encoding: chunked&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;cm-content q9tKkq_readonly&quot;&gt;{&quot;someData&quot;:&quot;Hello, this is response from server&quot;}&lt;b&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="452.5" x="1067.5" y="1752" as="geometry" />
+        </mxCell>
+        <mxCell id="WylmBeNUwlA5TNE59yxp-106" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="WylmBeNUwlA5TNE59yxp-88" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="1550" />
+              <mxPoint x="630" y="1550" />
+            </Array>
+            <mxPoint x="698" y="1531" as="sourcePoint" />
+            <mxPoint x="631" y="1573.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

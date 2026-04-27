@@ -24,4 +24,9 @@
     <Deploy />
   </Project>
   <Project Path="Lecture12.WebState.WeatherApp/Lecture12.WebState.WeatherApp.csproj" />
+  <Project Path="Lecture13.Auth.Basic/Lecture13.Auth.Basic.csproj" />
+  <Project Path="Lecture13.Auth.Cookie/Lecture13.Auth.Cookie.csproj" />
+  <Project Path="Lecture13.Auth.JWT.Access/Lecture13.Auth.JWT.Access.csproj" />
+  <Project Path="Lecture13.Auth.JWT.Full/Lecture13.Auth.JWT.Full.csproj" />
+  <Project Path="Lecture13.Auth.OpenIdConnect.Cookie/Lecture13.Auth.OpenIdConnect.Cookie.csproj" />
 </Solution>
