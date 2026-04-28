@@ -1,5 +1,5 @@
 services:
-  cats-db:
+  user-db:
     image: postgres:18
     environment:
       POSTGRES_USER: postgres
