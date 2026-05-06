@@ -6,6 +6,7 @@ namespace Lecture13.Auth.Cookie.Api.Something.Controllers;
 
 [ApiController]
 [Route("api/some")]
+[Authorize(Roles = "Administrator")]
 public class SomethingController() : ControllerBase
 {
     [HttpGet("data")]

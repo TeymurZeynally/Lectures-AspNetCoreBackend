@@ -14,6 +14,23 @@ namespace Lecture13.Auth.Cookie.Api.Account.Controllers
         [Route("login")]
         public async Task<IActionResult> LoginCookie(Credentials credentials)
         {
+            // сходить в базу чтобы их проверить
+            /// credentials.Login
+            /// credentials.Password
+
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, credentials.Login),
+                new Claim(ClaimTypes.Role, "Administrator")
+            };
+
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            await this.HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(identity),
+                new AuthenticationProperties { IsPersistent = true });
+
             return Ok();
         }
     }

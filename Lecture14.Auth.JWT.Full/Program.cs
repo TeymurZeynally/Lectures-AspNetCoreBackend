@@ -1,6 +1,9 @@
 using System.Text;
-using Lecture13.Auth.JWT.Access.Options;
+using Lecture14.Auth.JWT.Full.Api.Account.Services;
+using Lecture14.Auth.JWT.Full.DataAccess;
+using Lecture14.Auth.JWT.Full.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
@@ -8,6 +11,12 @@ using Microsoft.OpenApi;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<UsersDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("UsersDb")));
+
+builder.Services.AddScoped<IPasswordHashService, Argon2PasswordHashService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 builder.Services.AddSwaggerGen(o =>
 {

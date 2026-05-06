@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lecture13.Auth.JWT.Access.Api.Something.Controllers;
+namespace Lecture14.Auth.Certificate.Api.Something.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/some")]
-[Authorize]
 public class SomethingController() : ControllerBase
 {
     [HttpGet("data")]
@@ -14,13 +14,10 @@ public class SomethingController() : ControllerBase
     {
         var name = User.Identity!.Name;
 
-        var role = User.Claims.First(x => x.Type == ClaimTypes.Role).Value;
-
         return Ok(new
         {
             SomeData = "Hello, this is response from SomethingController",
             Name = name,
-            Role = role,
         });
     }
 }
