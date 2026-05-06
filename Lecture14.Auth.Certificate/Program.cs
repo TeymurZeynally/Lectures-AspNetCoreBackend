@@ -36,6 +36,9 @@ builder.Services
                 }
 
                 // Чтобы выписать серт:
+                // openssl req -x509 -newkey rsa:4096 -sha256 -days 365 -nodes -keyout client.key -out client.crt -subj "/CN=test-client" -addext "extendedKeyUsage=clientAuth"
+                // openssl pkcs12 -export -out client.pfx -inkey client.key -in client.crt -password pass:12345
+                // ↑ нужно чтобы ОС ему доверяла
 
                 var claims = new[]
                 {
