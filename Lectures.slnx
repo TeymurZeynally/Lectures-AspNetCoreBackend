@@ -30,4 +30,5 @@
   <Project Path="Lecture14.Auth.Certificate/Lecture14.Auth.Certificate.csproj" />
   <Project Path="Lecture14.Auth.JWT.Full/Lecture14.Auth.JWT.Full.csproj" />
   <Project Path="Lecture14.Auth.OpenIdConnect.Cookie/Lecture14.Auth.OpenIdConnect.Cookie.csproj" />
+  <Project Path="Lecture15.WebState.WeatherApp/Lecture15.WebState.WeatherApp.csproj" />
 </Solution>
