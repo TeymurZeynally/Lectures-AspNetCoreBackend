@@ -1,5 +1,4 @@
 ﻿using Lecture10.ClientAppIntegration.CatsApi.Api.Posts.Contracts;
-using Lecture10.ClientAppIntegration.CatsApi.Api.Posts.Exceptions;
 using Lecture10.ClientAppIntegration.CatsApi.Api.Posts.Filters;
 using Lecture10.ClientAppIntegration.CatsApi.Api.Posts.Services;
 using Microsoft.AspNetCore.Mvc;

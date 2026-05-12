@@ -1,6 +1,5 @@
 ﻿using Lecture08.CatsApi.Api.Cats.Contracts;
 using Lecture08.CatsApi.Api.Cats.Services;
-using Lecture08.CatsApi.Api.Cats.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 

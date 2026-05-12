@@ -1,8 +1,7 @@
 import { HeartOutlined, MessageOutlined, PlusOutlined, UserOutlined } from '@ant-design/icons'
 import { Avatar, Button, Card, Col, Form, Input, message, Row, Space, Spin, Tag, Typography } from 'antd'
-import { getApiCats, getApiCatsByUid, getApiPosts, postApiPosts } from '../../shared/api/generated'
+import { getApiCatsByUid, getApiPosts, postApiPosts } from '../../shared/api/generated'
 import { useQueries, useQuery } from '@tanstack/react-query'
-import { data } from 'react-router-dom'
 import { useMemo } from 'react'
 import { CURRENT_USER_UID } from '../../app/constants'
 

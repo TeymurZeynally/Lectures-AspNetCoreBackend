@@ -1,6 +1,5 @@
 using System.Text;
 using Lecture09.ErrorHandling.CatsApi.Api.Cats.Services;
-using Lecture09.ErrorHandling.CatsApi.Api.Posts.Filters;
 using Lecture09.ErrorHandling.CatsApi.Api.Posts.Services;
 using Lecture09.ErrorHandling.CatsApi.Api.Users.Services;
 using Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF;

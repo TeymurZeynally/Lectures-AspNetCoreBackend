@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF.Entities;
+﻿namespace Lecture09.ErrorHandling.CatsDatabase.DataAccess.EF.Entities;
 
 public partial class User
 {

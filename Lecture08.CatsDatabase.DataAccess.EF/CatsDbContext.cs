@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Lecture08.CatsDatabase.DataAccess.EF.Entities;
+﻿using Lecture08.CatsDatabase.DataAccess.EF.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lecture08.CatsDatabase.DataAccess.EF;

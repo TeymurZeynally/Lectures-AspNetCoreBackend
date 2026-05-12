@@ -15,22 +15,12 @@ builder.Services.AddHttpClient<IForecastClient, ForecastClient>(client =>
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
-builder.Services.AddDistributedMemoryCache();
-
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.HttpOnly = true;
-});
-
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseStaticFiles();
-
-app.UseSession();
 
 app.MapControllers();
 

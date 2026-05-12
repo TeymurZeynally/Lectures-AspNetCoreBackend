@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Lecture10.ClientAppIntegration.CatsDatabase.DataAccess.EF.Entities;
+﻿namespace Lecture10.ClientAppIntegration.CatsDatabase.DataAccess.EF.Entities;
 
 public partial class Post
 {

@@ -44,21 +44,6 @@ function incrementWeatherFetchCount() {
 }
 
 
-async function loadState() {
-    const renderHistory = (cities) => {
-        document.getElementById('cityHistory').innerHTML = cities.length > 0 ? cities.map(c => `<li>${c}</li>`).join('') : '<li>—</li>';
-    }
-    try {
-        const state = await fetch('/api/weather/state').then(x => x.json());
-
-        renderHistory(state.recentCitiesFromSession ?? []);
-        document.getElementById('cookieCity').innerHTML = state?.currentCityFromCookie ?? '-';
-    } catch {
-        renderHistory([]);
-        document.getElementById('cookieCity').textContent = '—';
-    }
-}
-
 async function fetchWeather() {
     const city = document.getElementById('citySelect').value;
 
@@ -74,9 +59,7 @@ async function fetchWeather() {
             <p><strong>${data.city}</strong></p>
             <p class="meta">${weatherCodeToText(data.weatherCode)} &middot; Ветер ${data.windSpeed} км/ч</p>`;
 
-        await loadState();
         incrementWeatherFetchCount();
-
     } catch {
         resultDiv.innerHTML = `<p style="color:red">Ошибка запроса</p>`;
     }

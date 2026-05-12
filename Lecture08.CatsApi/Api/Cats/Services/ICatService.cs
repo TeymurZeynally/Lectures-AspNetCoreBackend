@@ -1,5 +1,4 @@
 ﻿using Lecture08.CatsApi.Api.Cats.Contracts;
-using Lecture08.CatsApi.Api.Cats.Contracts;
 
 namespace Lecture08.CatsApi.Api.Cats.Services
 {

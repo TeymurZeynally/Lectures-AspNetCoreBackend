@@ -4,26 +4,27 @@ using Lecture15.WebState.WeatherApp.External.HttpClients;
 
 namespace Lecture15.WebState.WeatherApp.Api.Weather.Services;
 
-
-internal class WeatherService(IGeocodingClient geocodingClient, IForecastClient forecastClient) : IWeatherService
+internal class WeatherService(
+	IGeocodingClient geocodingClient,
+	IForecastClient forecastClient) : IWeatherService
 {
-	public async Task<WeatherResult> GetWeatherAsync(string city)
-	{
-		var place = await geocodingClient.FindAsync(city);
+    public async Task<WeatherResult> GetWeatherAsync(string city)
+    {
+        var place = await geocodingClient.FindAsync(city);
 
-		if (place == null)
-		{
-			throw new CityNotFoundException(city);
-		}
+        if (place == null)
+        {
+            throw new CityNotFoundException(city);
+        }
 
-		var forecast = await forecastClient.GetCurrentAsync(place.Latitude, place.Longitude);
+        var forecast = await forecastClient.GetCurrentAsync(place.Latitude, place.Longitude);
 
-		return new WeatherResult
-		{
-			City = place.Name,
-			Temperature = forecast.Temperature,
-			WeatherCode = (WeatherCode)forecast.WeatherCode,
-			WindSpeed = forecast.WindSpeed
-		};
-	}
+        return new WeatherResult
+        {
+            City = place.Name,
+            Temperature = forecast.Temperature,
+            WeatherCode = (Contract.WeatherCode)forecast.WeatherCode,
+            WindSpeed = forecast.WindSpeed
+        };
+    }
 }

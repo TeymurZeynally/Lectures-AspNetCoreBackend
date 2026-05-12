@@ -1,5 +1,4 @@
 ﻿using Lecture09.ErrorHandling.CatsApi.Api.Cats.Contracts;
-using Lecture09.ErrorHandling.CatsApi.Api.Cats.Contracts;
 
 namespace Lecture09.ErrorHandling.CatsApi.Api.Cats.Services
 {

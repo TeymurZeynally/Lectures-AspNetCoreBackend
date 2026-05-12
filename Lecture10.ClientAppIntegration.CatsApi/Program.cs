@@ -1,6 +1,5 @@
 using System.Text;
 using Lecture10.ClientAppIntegration.CatsApi.Api.Cats.Services;
-using Lecture10.ClientAppIntegration.CatsApi.Api.Posts.Filters;
 using Lecture10.ClientAppIntegration.CatsApi.Api.Posts.Services;
 using Lecture10.ClientAppIntegration.CatsApi.Api.Users.Services;
 using Lecture10.ClientAppIntegration.CatsDatabase.DataAccess.EF;
