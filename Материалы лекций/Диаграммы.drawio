@@ -6955,10 +6955,67 @@
     </mxGraphModel>
   </diagram>
   <diagram id="DDi_CkIE67-OSgljReY9" name="Caching">
-    <mxGraphModel dx="1295" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1828" dy="1075" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-6" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1oMSFF4oeZVw0FCPO6kQ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-17" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1oMSFF4oeZVw0FCPO6kQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-1" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api" value="my app" vertex="1">
+          <mxGeometry height="48" width="50" x="520" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-2" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" value="https://api.open-meteo.com" vertex="1">
+          <mxGeometry height="48" width="50" x="200" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-4" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" value="https://geocoding-api.open-meteo.com" vertex="1">
+          <mxGeometry height="48" width="50" x="200" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-5" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" target="1oMSFF4oeZVw0FCPO6kQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;/get?city=Moscow = ...&lt;div&gt;/get?city=Paris= ...&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="220" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-18" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1oMSFF4oeZVw0FCPO6kQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-8" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api" value="my app" vertex="1">
+          <mxGeometry height="48" width="50" x="520" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-10" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1oMSFF4oeZVw0FCPO6kQ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-9" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.classic_load_balancer;fillColor=#F58534;gradientColor=none;" value="Load balancer" vertex="1">
+          <mxGeometry height="72" width="69" x="700" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-11" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" target="1oMSFF4oeZVw0FCPO6kQ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-13" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1oMSFF4oeZVw0FCPO6kQ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-12" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Browser.svg;" value="Clinet" vertex="1">
+          <mxGeometry height="52" width="65" x="930" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-14" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" target="1oMSFF4oeZVw0FCPO6kQ-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="406" as="sourcePoint" />
+            <mxPoint x="224" y="162" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-15" edge="1" parent="1" source="1oMSFF4oeZVw0FCPO6kQ-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.005;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" target="1oMSFF4oeZVw0FCPO6kQ-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="270" as="sourcePoint" />
+            <mxPoint x="520" y="296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1oMSFF4oeZVw0FCPO6kQ-16" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" value="Redis" vertex="1">
+          <mxGeometry height="50" width="59.52" x="390" y="430" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

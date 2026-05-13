@@ -52,12 +52,12 @@ async function fetchWeather() {
     resultDiv.innerHTML = 'Загрузка...';
 
     try {
-        const data = await fetch(`/api/weather/current?city=${encodeURIComponent(city)}`).then(x => x.json());
+        const data = await fetch(`/api/weather/get?city=${encodeURIComponent(city)}`).then(x => x.json());
 
         resultDiv.innerHTML = `
             <p class="temp">${data.temperature}°C</p>
             <p><strong>${data.city}</strong></p>
-            <p class="meta">${weatherCodeToText(data.weatherCode)} &middot; Ветер ${data.windSpeed} км/ч</p>`;
+            <p class="meta">${weatherCodeToText(data.weatherCode)} &middot; Ветерок ${data.windSpeed} км/ч</p>`;
 
         incrementWeatherFetchCount();
     } catch {

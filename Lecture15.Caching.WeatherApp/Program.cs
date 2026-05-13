@@ -15,12 +15,30 @@ builder.Services.AddHttpClient<IForecastClient, ForecastClient>(client =>
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
+builder.Services
+    .AddDistributedMemoryCache()
+    .AddStackExchangeRedisCache(options =>
+    {
+        options.Configuration = builder.Configuration.GetConnectionString("RedisCache");
+        options.InstanceName = "weather-app:";
+    });
+
+builder.Services
+	.AddOutputCache()
+    .AddStackExchangeRedisOutputCache(options =>
+    {
+        options.Configuration = builder.Configuration.GetConnectionString("RedisCache");
+        options.InstanceName = "weather-app:";
+    });
+
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseStaticFiles();
+
+app.UseOutputCache();
 
 app.MapControllers();
 

@@ -13,6 +13,8 @@ internal class ForecastClient(HttpClient http) : IForecastClient
 
 		var current = json.GetProperty("current");
 
+		await Task.Delay(TimeSpan.FromSeconds(2));
+
 		return new Forecast
 		{
 			Temperature = current.GetProperty("temperature_2m").GetDouble(),

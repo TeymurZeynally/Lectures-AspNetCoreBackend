@@ -2,6 +2,7 @@
 using Lecture15.WebState.WeatherApp.Api.Weather.Exceptions;
 using Lecture15.WebState.WeatherApp.Api.Weather.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace Lecture15.WebState.WeatherApp.Api.Weather.Controllers;
 
@@ -9,8 +10,13 @@ namespace Lecture15.WebState.WeatherApp.Api.Weather.Controllers;
 [Route("api/weather")]
 public class WeatherController(IWeatherService weatherService) : ControllerBase
 {
-	[HttpGet("current")]
-	public async Task<ActionResult<WeatherResult>> GetCurrent([FromQuery] string? city)
+	[HttpGet("get")]
+    // Кэш на стороне клиента:
+    // [ResponseCache(Duration = 1800 /*30min*/, Location = ResponseCacheLocation.Client)]
+
+    // Кэш на стороне сервера:
+    // [OutputCache(Duration = 1800)]
+    public async Task<ActionResult<WeatherResult>> GetCurrent([FromQuery] string? city)
 	{
 		try
 		{
